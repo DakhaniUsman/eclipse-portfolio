@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 5px solid blue;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 5px solid green;
+}
+
+#main-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 5px solid red;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-navbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3em;
+}
+
+.logo{
+    width: 150px;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > h2 > a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.desktop-navbar-list{
+    width: 60%;
+    max-width: 900px;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.desktop-navbar-list > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.desktop-navbar-list > ul > li > a{
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.cta{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.cta-btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cta-btn > a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.cta-btn > a > i{
+    margin-left: 5px;
+}
+
+.cta-btn > a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.mobile-navbar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1em;
+}
+
+.mobile-navbar-right{
+    width: 50%;
+    max-width: 300px;
+    min-width: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamMenu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    z-index: 10;
+}
+
+.hamMenu>span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 25px;
+    background-color: #4169e1;
+    transition: all .3s ease;
+}
+
+.hamMenu>span:nth-child(1) {
+    top: 25%;
+}
+
+.hamMenu>span:nth-child(3) {
+    top: 65%;
+}
+
+.hamMenu.active>span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamMenu.active>span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamMenu.active>span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.offScreenMenu {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    backdrop-filter: blur(1.2rem);
+    /* background : linear-gradient(white,skyblue); */
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 5px;
+}
+
+.offScreenMenu.active{
+    right: 0;
+}
