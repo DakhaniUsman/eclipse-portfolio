@@ -274,7 +274,7 @@ section {
 .hero-desc {
   position: relative;
   width: 600px;
-  height: 400px;
+    height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -293,9 +293,10 @@ h2 {
 .hero-btns {
   position: relative;
   width: 380px;
+  /* height: 100%; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .hero-cta-btn {
