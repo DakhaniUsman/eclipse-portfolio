@@ -310,6 +310,18 @@ section {
   padding: 2em;
 }
 
+section.show .hero-desc h1{
+  animation: slideInDown 1s ease;
+}
+
+section.show .hero-desc h2{
+  animation: slideInRight 1s ease;
+}
+
+section.show .hero-desc p{
+  animation: slideInUp 1s ease;
+}
+
 h1 {
   font-size: 2.5em;
 }
@@ -326,6 +338,12 @@ h2 {
   justify-content: space-between;
   /* align-items: center; */
 }
+
+section.show .hero-btns{
+  animation: fadeInUp 1s ease;
+}
+
+
 
 .hero-cta-btn {
   width: max-content;
@@ -463,6 +481,10 @@ h2 {
   position: relative;
   font-size: 2em;
   margin-bottom: 2em;
+}
+
+section.show .section-heading{
+  animation: slideInDown 1s ease;
 }
 
 .section-heading::before {
