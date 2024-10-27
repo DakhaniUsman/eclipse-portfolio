@@ -1,12 +1,16 @@
+const observerOptions = {
+    root: null,
+    // rootMargin: "0px 0px -50% 0px", // Adjusts to trigger earlier (you can tweak this value)
+    threshold: 0.1 // Triggers animation when 10% of the element is in view
+};
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
-    })
-})
+    });
+}, observerOptions);
 
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+// Attach observer to all elements with the 'hidden' class
+document.querySelectorAll('.hidden').forEach((element) => observer.observe(element));

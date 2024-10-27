@@ -32,21 +32,17 @@
   flex-direction: column;
 }
 
-.hidden{
+.hidden {
   opacity: 0;
-  filter: blur(5px);
-  /* transform: translateX(-50%); */
-  scale: 0.5;
-  transition: all 1s ease;
+  transform: translateY(20px); /* Slightly shifted down initially */
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-
-.show{
+.show {
   opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-  scale: 1;
+  transform: translateY(0); /* Animates into place */
 }
+
 
 header {
   position: fixed;
@@ -277,14 +273,15 @@ section {
   width: 100%;
   margin: auto;
   max-width: 1600px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100%;
   /* border: 2px solid blue; */
   /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2em 3em;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
 .hero {
@@ -379,6 +376,7 @@ h2 {
   color: black;
   padding: 50px 20px;
   text-align: center;
+  
 }
 
 .clients-section h2 {
@@ -619,8 +617,8 @@ h2 {
   align-items: center;
   /* top: 4em; */
   padding: 2em 3em;
+  top: 4em;
   margin-bottom: 2em;
-  padding-top: 5em;
 }
 
 .services-container {
