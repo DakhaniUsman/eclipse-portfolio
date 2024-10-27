@@ -81,10 +81,12 @@
 
     .services{
         padding: 0px;
+        padding-top: 5em;
     }
 
     .portfolio{
         padding: 0px;
+        padding-top: 5em;
     }
 
     .portfolio-project{
@@ -107,6 +109,7 @@
 
     .contact{
         padding: 0px;
+        padding-top: 5em;
     }
 
     .contact-container{
