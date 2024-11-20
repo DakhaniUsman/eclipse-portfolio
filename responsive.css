@@ -91,6 +91,8 @@
 
     .portfolio-project{
         flex-direction: column;
+        gap: 1em;
+        height: 100%;
     }
 
     .portfolio-project:nth-child(2), .portfolio-project:nth-child(4){
@@ -215,6 +217,8 @@
 
     .portfolio-project{
         flex-direction: column;
+        height: 100%;
+        gap: 1em;
     }
 
     .portfolio-project:nth-child(2), .portfolio-project:nth-child(4){

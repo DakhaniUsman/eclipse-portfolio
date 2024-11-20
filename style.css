@@ -448,7 +448,7 @@ section.show .hero-btns{
       transform: translateX(0);
   }
   to {
-      transform: translateX(-7%);
+      transform: translateX(-50%);
   }
 }
 
@@ -848,6 +848,10 @@ section.show .section-heading{
   width: 50%;
   height: 100%;
   background-color: #aaa;
+  border-radius: 10px;
+}
+
+.project-img img{
   border-radius: 10px;
 }
 
