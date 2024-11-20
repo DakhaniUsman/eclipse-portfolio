@@ -430,8 +430,8 @@ section.show .hero-btns{
 }
 
 .logo-track img {
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 150px;
   margin: 0 10px;
   opacity: 0.8;
   transition: transform 0.3s, opacity 0.3s;
@@ -448,7 +448,7 @@ section.show .hero-btns{
       transform: translateX(0);
   }
   to {
-      transform: translateX(-50%);
+      transform: translateX(-7%);
   }
 }
 
@@ -499,7 +499,8 @@ section.show .section-heading{
   border-radius: 6px;
   background-color: black;
   bottom: -5px;
-  left: 35%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -703,9 +704,15 @@ section.show .section-heading{
   padding: 10px;
 }
 
+#testimonials{
+  background-color: #aaa;
+
+}
+
 .testimonial-section {
+  width: 100%;
+  height: 100%;
   text-align: center;
-  background-color: #fff;
   padding: 50px 0;
   color: black;
   display: flex;
@@ -792,7 +799,7 @@ section.show .section-heading{
   /* top: 6em; */
   /* padding-top: 10%; */
   /* border: 2px solid black; */
-  display: none;
+  /* display: none; */
 }
 
 
